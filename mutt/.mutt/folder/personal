@@ -1,0 +1,8 @@
+
+
+set from = "nick@srv"
+set realname = "Name"
+set smtp_url = "smtp://nick@smtp.gmail.com:587/"
+set smtp_pass = "xxxxxxxx"
+
+set signature = "~/.mutt/signatures/personal"

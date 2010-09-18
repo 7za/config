@@ -1,0 +1,8 @@
+
+
+set from = "pro_mail"
+set realname = "Name (email)"
+set smtp_url = "smtp://nick@zimbra3.corp.accelance.fr:465/"
+set smtp_pass = "yyyyyyyyyyyyyyyy"
+
+set signature = "~/.mutt/signatures/work"

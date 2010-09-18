@@ -1,0 +1,10 @@
+
+unset preconnect
+unset from
+unset realname
+unset imap_user
+unset imap_pass
+unset smtp_url
+unset smtp_pass
+
+set ssl_starttls=ask-yes

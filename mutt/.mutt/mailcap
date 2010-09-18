@@ -1,0 +1,5 @@
+text/html; lynx -dump %s; nametemplate=%s.html; copiousoutput
+
+application/pdf; mutt_bgrun xpdf  %s; 
+application/pdf; pdftotext %s -; copiousoutput
+
