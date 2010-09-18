@@ -4,11 +4,9 @@ account-hook . 'source ~/.mutt/account/default'
 
 account-hook imaps://nick@imap.gmail.com:993 'source ~/.mutt/account/personal'
 folder-hook imaps://nick@imap.gmail.com:993 'source ~/.mutt/folder/personal'
-#set folder = imaps://ralph.bean@imap.gmail.com:993'
 
 account-hook imaps://nick@srv@zimbra2.corp.accelance.fr:993 'source ~/.mutt/account/work'
 folder-hook imaps://nick@srv@zimbra2.corp.accelance.fr:993 'source ~/.mutt/folder/work'
-#; set folder = imaps://rjbpop@mymail.rit.edu:993'
 
 set folder=imaps://nick@srv@zimbra2.corp.accelance.fr:993
 mailboxes "=INBOX"
@@ -35,7 +33,6 @@ set timeout=15
 set imap_check_subscribed
 set imap_keepalive = 900
 
-# Header stuff
 ignore *
 unignore from: date subject to cc
 unignore x-mailing-list: posted-to:
@@ -44,7 +41,6 @@ hdr_order Date From To Cc
 
 fcc-hook .*                                   ~/.sent
 
-# For better looks
 set mailcap_path 	= ~/.mutt/mailcap
 
 
@@ -56,7 +52,6 @@ set sort_aux = 'last-date-received'
 set editor='vim'
 bind editor <space> noop
        
-# My Rolodeck :)
 set alias_file= ~/.mutt/aliases
 set sort_alias= alias
 set reverse_alias=yes
@@ -64,12 +59,9 @@ set reverse_alias=yes
 source ~/.mutt/colors 
 source ~/.mutt/macros
 
-# HTML is the last option.
 alternative_order text/enriched text/plain text/html 
 auto_view text/html
 auto_view application/pdf
 
 set status_format="-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?     %?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---"
 
-# Last, but not least, get mutt to display its version on startup.
-push <show-version>
