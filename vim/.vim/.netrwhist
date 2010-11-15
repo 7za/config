@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/fred/data/devel/linux-2.6/Documentation/powerpc/dts-bindings/gpio'
+let g:netrw_dirhist_2='/home/fred/data/devel/linux-2.6/Documentation/powerpc/dts-bindings'
+let g:netrw_dirhist_3='/home/fred/programmations/pquicc2/biossrc'
