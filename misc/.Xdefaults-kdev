@@ -1,0 +1,65 @@
+! tangoesque scheme
+*background: #111111
+*foreground: #babdb6
+! Black (not tango) + DarkGrey
+*color0:  #000000
+*color8:  #555753
+! DarkRed + Red
+*color1:  #ff6565
+*color9:  #ff8d8d
+! DarkGreen + Green
+*color2:  #93d44f
+*color10: #c8e7a8
+! DarkYellow + Yellow
+*color3:  #eab93d
+*color11: #ffc123
+! DarkBlue + Blue
+*color4:  #204a87
+*color12: #3465a4
+! DarkMangenta + Mangenta
+*color5:  #ce5c00
+*color13: #f57900
+!DarkCyan + Cyan (both not tango)
+*color6:  #89b6e2
+*color14: #46a4ff
+! LightGrey + White
+*color7:  #cccccc
+*color15: #ffffff
+
+urxvt*loginShell:true
+urxvt*transparent:true
+urxvt*shading:(
+urxvt*background:#111111
+urxvt*foreground:#babdb6
+urxvt*scrollBar:false
+urxvt*scrollBar_right:true
+urxvt*transpscrollbar:true
+urxvt*saveLines:32767
+urxvt*font:*-*-fixed-medium-r-normal--*-90-*-*-*-*-iso8859-1
+urxvt*boldFont:*-*-fixed-bold-r-normal--*-90-*-*-*-*-iso8859-1
+URxvt.geometry: 400x30 
+URxvt.buffered: true
+URxvt.background: #111111
+URxvt.foreground: #babdb6
+URxvt.cursorColor: grey
+URxvt.underlineColor: grey
+URxvt.font:xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true
+
+!------------
+!True Transparency
+!------------
+!set to 32-bit for real transparency (compositing required (see xcompmgr)
+	urxvt*depth:             32
+	!transparent=0000 opaque=ffff
+	urxvt*background: rgba:1111/1111/1111/dddd
+	!urxvt*background: rgba:1111/1111/1111/0000
+
+
+	!------------------
+	!False tranparency
+	!------------------
+	!URxvt.transparent: true
+	!URxvt.shading: 50 
+
+	Urxvt.secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+
